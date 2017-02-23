@@ -41,3 +41,13 @@ a:hover {
 span.icon-bar {
     background-color: #FCAB10;
 }
+
+.media-body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.cc-project {
+    color: #009688;
+    margin-top: 30px;
+}
