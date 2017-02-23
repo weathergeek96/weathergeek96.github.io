@@ -1,0 +1,43 @@
+.cc-teal {
+    background-color: #009688;
+    color: white;
+    padding: 25px;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+body {
+    background-color: #009688;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #FCAB10;
+}
+
+.navbar-brand {
+    height: auto;
+}
+
+.nav>li>a:hover {
+    background-color: transparent;
+    color: #FCAB10;
+}
+
+.navbar-nav {
+    font-size: 20px;
+    padding-top: 105px;
+    float: right;
+    text-align: center;
+    margin-right: 20px;
+}
+
+span.icon-bar {
+    background-color: #FCAB10;
+}
