@@ -6,26 +6,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/ab8e80032e.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-    <nav class="navbar cc-teal">
+<body data-spy="scroll" data-target=".navbar" data-offset="5">
+    <nav class="navbar cc-teal" id="home" data-spy="affix" data-offset-top="5">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#home">
                     <h1>Caleb 
                     <br>Malcolm
                     <br>Chapman</h1> </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li class="active"><a href="#">About Caleb</a></li>
-                    <li class="active"><a href="#">Portfolio</a></li>
+                    <li class="active"><a href="#aboutCaleb">About Caleb</a></li>
+                    <li class="active"><a href="#portfolio">Portfolio</a></li>
                     <li class="active"><a href="#">Resume</a></li>
                     <li class="active"><a href="#">Contact Caleb</a></li>
                 </ul>
@@ -33,16 +33,14 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row">
-            <div class="media">
-                <div class="media-left media-middle"> <img src="images/profilecrop.png" class="media-object img-circle" style="width:150px"> </div>
-                <div class="media-body">
-                    <h1 class="media-heading">About Caleb</h1>
-                    <p>Hello! My name is Caleb Chapman, thank you so much for taking the time to visiting my site. I currently work for American Medical Response as an Emergency Medical Technician. I am a Computer Information System studend with a concentration in Software Programming at Bluegrass Community and Technical College. I am fluent in HTML, CSS, and the framework BootStrap. I am moderatly fluent in Python, PHP, JavaScript, jQuery, and SQL. I am also experianced in running web and mail servers.</p>
-                </div>
+        <div class="row" id="aboutCaleb">
+            <div class="col-sm-6">
+                <h1 class="text-center">About Caleb</h1>
+                <p class="cc-par">Hello! My name is Caleb Chapman, thank you so much for taking the time to visiting my site. I currently work for American Medical Response as an Emergency Medical Technician. I am a Computer Information System studend with a concentration in Software Programming at Bluegrass Community and Technical College. I am fluent in HTML, CSS, and the framework BootStrap. I am moderatly fluent in Python, PHP, JavaScript, jQuery, and SQL. I am also experianced in running web and mail servers.</p>
             </div>
+            <div class="col-sm-6"> <img class="cc-image" src="images/profilecrop.png"></div>
         </div>
-        <div class="row">
+        <div class="row" id="portfolio">
             <h1 class="text-center">Portfolio</h1> </div>
         <div class="row cc-project">
             <div class="col-sm-4">
@@ -50,6 +48,9 @@
                     <div class="panel-body">
                         <h3 class="text-center">Friendcode Lookup</h3>
                         <p> This project is programmed in Python using the discord API discord.py. This project uses jSON and a webAPI to get and set data in a remote database. This is actually a module for a discord chat bot. It was created for the Nookipedia group chat to display peoples friendcodes and dreamcodes. </p>
+                        <a href="https://github.com/weathergeek96/Cogs-for-Red/tree/master/friendCode">
+                            <button type="button" class="btn btn-default"><i class="fa fa-github" aria-hidden="true"></i> GitHub</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -58,19 +59,38 @@
                     <div class="panel-body">
                         <h3 class="text-center">Paparelli Law</h3>
                         <p> Paparelli Law is a law firm in Nashville, TN. I created their website, along with being there IT consultant. The site is a Wordpress site. It is completed but is not currently live due to prefrence of the client.</p>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#PaparelliLaw"><i class="fa fa-camera" aria-hidden="true"></i> Preview</button>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <h3 class="text-center">FriendCode Lookup</h3>
-                        <p> This project is programmed in Python using the discord API discord.py. This project uses jSON and a webAPI to get and set data in a remote database. This is actually a module for a discord chat bot. It was created for the Nookipedia group chat to display peoples friendcodes and dreamcodes. </p>
+                        <h3 class="text-center">Python RPG</h3>
+                        <p> Python RPG is a game that will have all of it's content created by the people playing it. It is programmed in Python.</p>
+                        <a href="https://github.com/weathergeek96/PythonRPG">
+                            <button type="button" class="btn btn-default"><i class="fa fa-github" aria-hidden="true"></i> GitHub</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<!-- Modal -->
+<div id="PaparelliLaw" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Paparelli Law</h4> </div>
+            <div class="modal-body"> <img src="images/PaparelliLaw.png" width="100%"> </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>
