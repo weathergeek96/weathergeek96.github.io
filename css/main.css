@@ -18,7 +18,8 @@ a {
 }
 
 a:hover {
-    color: #FCAB10;
+    /*color: #FCAB10;*/
+    color: #ffd012;
 }
 
 .navbar-brand {
@@ -27,7 +28,8 @@ a:hover {
 
 .nav>li>a:hover {
     background-color: transparent;
-    color: #FCAB10;
+    /*color: #FCAB10;*/
+    color: #ffd012;
 }
 
 .navbar-nav {
@@ -58,7 +60,8 @@ span.icon-bar {
 
 .cc-below {
     margin-bottom: 60px;
-    color: #FCAB10;
+    /*color: #FCAB10;*/
+    color: #ffd012;
 }
 
 .cc-image {
@@ -82,4 +85,13 @@ span.icon-bar {
 .affix ~ .container-fluid {
     position: relative;
     top: 50px;
+}
+
+#main-cont {
+    margin-bottom: 25px;
+}
+
+.cc-small {
+    /*color: #FCAB10;*/
+    color: #ffd012;
 }

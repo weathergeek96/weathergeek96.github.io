@@ -26,17 +26,17 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#aboutCaleb">About Caleb</a></li>
                     <li class="active"><a href="#portfolio">Portfolio</a></li>
-                    <li class="active"><a href="#">Resume</a></li>
-                    <li class="active"><a href="#">Contact Caleb</a></li>
+                    <li class="active"><a href="#resume">Resume</a></li>
+                    <li class="active"><a href="#contact">Contact Caleb</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container" id="main-cont">
         <div class="row" id="aboutCaleb">
             <div class="col-sm-6">
                 <h1 class="text-center">About Caleb</h1>
-                <p class="cc-par">Hello! My name is Caleb Chapman, thank you so much for taking the time to visiting my site. I currently work for American Medical Response as an Emergency Medical Technician. I am a Computer Information System studend with a concentration in Software Programming at Bluegrass Community and Technical College. I am fluent in HTML, CSS, and the framework BootStrap. I am moderatly fluent in Python, PHP, JavaScript, jQuery, and SQL. I am also experianced in running web and mail servers.</p>
+                <p class="cc-par">Hello! My name is Caleb Chapman, thank you so much for taking the time to visiting my site. I currently work for American Medical Response as an Emergency Medical Technician. I am a Computer Information System student with a concentration in Software Programming at Bluegrass Community and Technical College. I am fluent in HTML, CSS, and the framework BootStrap. I am moderatly fluent in Python, PHP, JavaScript, jQuery, and SQL. I am also experianced in running web and mail servers.</p>
             </div>
             <div class="col-sm-6"> <img class="cc-image" src="images/profilecrop.png"></div>
         </div>
@@ -58,7 +58,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <h3 class="text-center">Paparelli Law</h3>
-                        <p> Paparelli Law is a law firm in Nashville, TN. I created their website, along with being there IT consultant. The site is a Wordpress site. It is completed but is not currently live due to prefrence of the client.</p>
+                        <p> Paparelli Law is a law firm in Nashville, TN. I designed and developed their website with Wordpress. The site is completed but is not currently live per request of the client.</p>
                         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#PaparelliLaw"><i class="fa fa-camera" aria-hidden="true"></i> Preview</button>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <h3 class="text-center">Python RPG</h3>
-                        <p> Python RPG is a game that will have all of it's content created by the people playing it. It is programmed in Python.</p>
+                        <p> Python RPG is a game that will have all of it's content created by the people playing it. It is programmed in Python. It still is a work in progress as I firmilerize myself with Python. </p>
                         <a href="https://github.com/weathergeek96/PythonRPG">
                             <button type="button" class="btn btn-default"><i class="fa fa-github" aria-hidden="true"></i> GitHub</button>
                         </a>
@@ -75,6 +75,79 @@
                 </div>
             </div>
         </div>
+        <div class="row cc-project">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3 class="text-center">Personalize Guess Who</h3>
+                        <p> This project is uses PHP, jQuery, HTML, and CSS to make a custom charactor sheet for the popular board game, Guess Who! This project is about 25% complete. When finished it will be a quick and easy way to customize a classic board game! </p>
+                        <a href="">
+                            <button type="button" class="btn btn-default"><i class="fa fa-television" aria-hidden="true"></i> Visit Site</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="resume">
+            <h1 class="text-center">Resume</h1> </div>
+        <div class="row" id="education">
+            <h2 class="">Education</h2></div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Volunteer State Community College - May 2015</h4> Certification
+                <br> Major: Emergency Medical Technician </div>
+            <div class="col-sm-6">
+                <h4>Bluegrass Community and Technical College - May 2018</h4> Associate of Science
+                <br> Major: Computer and Information Systems
+                <br> Concentration: Programming
+                <br> Cumulative GPA: 3.66/4.00</div>
+        </div>
+        <div class="row" id="certs">
+            <h2 class="">Certifications and Licenses</h2>
+            <div class="col-sm-12">Emergency Medical Technician - State of Kentucky, National Registery of EMTs
+                <br> Amauter Radio Operator - Federal Communication Commission
+                <br> CPR - American Heart Association</div>
+        </div>
+        <div class="row" id="work">
+            <h2 class="">Work Experiance</h2></div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>American Medical Response <small class="cc-small"><br>
+                Emergency Medical Technician</small></h3> Nov 2015 – Present
+                <br> Administered high quality patient care in a quick and orderly fashion
+                <br> Evaluated and managed emergency scenes
+                <br> </div>
+            <div class="col-sm-4">
+                <h3>Firehouse Subs<small class="cc-small"><br>
+                Team Member - Training Director</small></h3> Jan 2015 – May 2016
+                <br>Evaluated and implemented training material for new and existing employees
+                <br> Conducted training of employees per corporate standards </div>
+            <div class="col-sm-4">
+                <h3>Chick-fil-A<small class="cc-small"><br>
+                Team Member</small></h3> April 2014 – Jan 2015
+                <br>Received and prepared orders quickly and accurately
+                <br> Addressed customer’s issues per company policy </div>
+        </div>
+        <div class="row" id="contact">
+            <h1 class="text-center">Contact Caleb</h1> </div>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Your Email:</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email"> </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="msg">Message:</label>
+                <div class="col-sm-8">
+                    <textarea type="text" class="form-control" id="msg" placeholder="Your message"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <button type="submit" class="btn btn-default">Send Message</button>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 <!-- Modal -->
